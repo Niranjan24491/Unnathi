@@ -26,10 +26,11 @@ export default class Support extends Component {
   onSubmitClick = () => {
     if (this.state.name && this.state.mail && this.state.message) {
       axios
-        .post(`${api}contactUs`, {
+        .post(`${api}sendMail`, {
           name: this.state.name,
           mail: this.state.mail,
-          message: this.state.message
+          message: this.state.message,
+          type: this.state.supportType
         })
         .then(function(response) {
           this.setState({
@@ -38,6 +39,7 @@ export default class Support extends Component {
             message: "",
             alertShow: true
           });
+          alert('Your message has been sent successfully');
         })
         .catch(function(error) {
           console.log(error);
@@ -46,6 +48,7 @@ export default class Support extends Component {
             mail: "",
             message: ""
           });
+          alert('Your message has not been sent');
         });
     } else {
       alert("Enter all details");
