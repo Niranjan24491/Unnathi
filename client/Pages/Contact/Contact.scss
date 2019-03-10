@@ -1,0 +1,86 @@
+.contact-container {
+  .contact-header {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .contact-tile {
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    padding: 17px;
+    border: 1px solid #1d809f;
+    border-radius: 15px;
+    margin-right: 20px;
+    min-height: 223px;
+
+    .address-image {
+      margin: 0 auto;
+      width: 20%;
+      margin-bottom: 8%;
+    }
+
+    .underline-div {
+      border: 2px solid #f2c94d;
+      width: 50px;
+      margin: 0 auto;
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+
+    .span-header {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .span-text {
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+    }
+  }
+
+  .contact-map {
+    min-height: 300px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+    text-align: center;
+    padding: 31px 24px 0px 49px;
+
+    .contact-form-title {
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .contact-form-name,
+    .contact-form-mail,
+    .contact-form-message {
+      display: block;
+      text-align: center;
+      width: 100%;
+      min-height: 70px;
+      border: none;
+      border-bottom: 1px dotted grey;
+      outline: none;
+    }
+
+    .contact-form-message {
+      padding: 6%;
+    }
+
+    .contact-submit-button {
+      width: 40%;
+      height: 53px;
+      margin-top: 9%;
+      background-color: #f2c94d;
+      color: #1d809f;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Ubuntu", sans-serif;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.services-container {
+
+  .services-title {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+  }
+
+  header {
+    background-color: #F2C94D;
+  }
+
+  .MuiTab-labelContainer-56 {
+    span {
+      font-size: 14px;
+      font-family: "Ubuntu", sans-serif;
+    }
+  }
+  
+  .MuiPrivateTabIndicator-colorPrimary-63 {
+    background-color: #1d809f;
+  }
+
+  .tab-content {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 26px;
+    font-weight: bold;
+  }
+}
+
+.MuiTab-textColorPrimary-50 {
+  .MuiTab-selected-52 {
+    color: #1d809f !important;
+  }
+}
+
+.services-button {
+  pointer-events: none;
+  background: #ECC963;
+  outline: none;
+  border: none;
+  min-height: 5vh;
+  min-width: 20vh;
+  margin-right: 3%;
+  margin-bottom: 1%;
+  font-size: 16px;
+  color: #3D809E;
+  text-shadow: none;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
+.services-tab-container {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.contact-form {
+  margin: 0 auto;
+  text-align: center;
+  padding: 31px 24px 0px 49px;
+
+  .contact-form-title {
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .contact-form-name,
+  .contact-form-mail,
+  .contact-form-message {
+    display: block;
+    text-align: center;
+    width: 100%;
+    min-height: 70px;
+    border: none;
+    border-bottom: 1px dotted grey;
+    outline: none;
+    font-size: 18px;
+  }
+
+  .contact-form-message {
+    padding: 6%;
+  }
+
+  .contact-submit-button {
+    width: 40%;
+    height: 53px;
+    margin-top: 9%;
+    background-color: #f2c94d;
+    color: #1d809f;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+    outline: none;
+  }
+}

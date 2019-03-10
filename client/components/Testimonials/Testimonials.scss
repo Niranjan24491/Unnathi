@@ -1,0 +1,102 @@
+.spectrum {
+  width: 100wh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.slick-slider {
+  width: 50%;
+  margin: 0 auto;
+  min-height: 25vh;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.quote-container {
+  text-align: center;
+  margin-top: 2%;
+  .quote-image {
+    width: 6%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  p {
+    font-family: "Raleway", sans-serif;
+    font-size: 19px;
+    line-height: 26px;
+    padding-top: 38px;
+  }
+}
+
+.video-container {
+  padding: 3% 10% 4% 10%;
+
+  h1 {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+.services-title {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .slick-slider {
+    width: 91% !important;
+  }
+
+  .slick-track {
+    max-height: 368px;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  // font-family: "Open Sans", sans-serif;
+  // font-family: "Lobster", cursive;
+  // font-family: "Pacifico", cursive;
+  // font-family: "Dancing Script", cursive;
+  font-weight: 300;
+  // background: #f7f7f7 url("assets/images/background.jpg") 0 0 no-repeat;
+  background-size: cover;
+  color: #333;
+  overflow-x: hidden;
+}

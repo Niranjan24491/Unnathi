@@ -1,0 +1,38 @@
+.support-container {
+  text-align: center;
+  .support-title {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #1d809f;
+    border-radius: 54px;
+    margin: 0 auto;
+    margin-top: 38%;
+    margin-bottom: 12%;
+    cursor: pointer;
+    background-color: #f2c94d;
+
+    .circle-image {
+      margin: 0 auto;
+      vertical-align: middle;
+      text-align: center;
+      margin-top: 15%;
+    }
+  }
+
+  .projects-slide {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .circle {
+    margin-top: 3% !important;
+    margin-bottom: 10% !important;
+  }
+}
