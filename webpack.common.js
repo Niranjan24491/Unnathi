@@ -1,12 +1,13 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CompressionPlugin = require("compression-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  mode: "production",
-  entry: path.resolve(__dirname, "client/App.js"),
+  mode: 'production',
+  entry: path.resolve(__dirname, 'client/App.js'),
   resolve: {
-    extensions: [".js", ".jsx", ".scss", ".css"]
+    extensions: ['.js', '.jsx', '.scss', '.css']
   },
   optimization: {
     splitChunks: {
@@ -35,57 +36,37 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: ["cache-loader", "babel-loader"],
+        use: ['cache-loader', 'babel-loader'],
         exclude: /node_modules/
       },
       {
         test: /\.jsx$/,
-        use: ["cache-loader", "babel-loader"],
+        use: ['cache-loader', 'babel-loader'],
         exclude: /node_modules/
       },
-      { test: /\.css$/, loader: "style-loader!css-loader" },
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
       {
         test: /\.scss$/,
-        use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader"
-          },
-          {
-            loader: "sass-loader"
-          }
-        ],
-        include: [path.resolve(__dirname, "client")],
-        exclude: /node_modules/
+        include: path.resolve(__dirname, 'client'),
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader'
+            },
+            'sass-loader'
+          ]
+        })
       },
       {
-        test: /\.(gif|png|jpg|svg)$/i,
+        test: /\.(png|jpe?g|gif|svg)$/,
         use: [
-          "url-loader",
           {
-            loader: "image-webpack-loader",
+            loader: 'url-loader',
             options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 30
-              },
-              // optipng.enabled: false will disable optipng
-              optipng: {
-                enabled: false
-              },
-              pngquant: {
-                quality: "30",
-                speed: 6
-              },
-              gifsicle: {
-                interlaced: false
-              },
-              // the webp option will enable WEBP
-              webp: {
-                quality: 30
-              }
+              limit: 8192,
+              name: '[name].[hash].[ext]',
+              outputPath: 'images/'
             }
           }
         ]
@@ -93,20 +74,25 @@ module.exports = {
     ]
   },
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "build"),
-    publicPath: "/"
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/'
   },
-  target: "web",
-  devtool: "eval",
+  target: 'web',
+  devtool: 'eval',
   stats: {
     errorDetails: true
   },
   plugins: [
+    new ExtractTextPlugin({
+      filename: 'unnathi.css',
+      disable: false,
+      allChunks: true
+    }),
     new HtmlWebpackPlugin({
-      title: "Unnathi - Healing Foundation Trust",
-      template: "./client/index.ejs",
-      favicon: "./client/assets/images/unnathi_logo.png",
+      title: 'Unnathi - Healing Foundation Trust',
+      template: './client/index.ejs',
+      favicon: './client/assets/images/unnathi_logo.png',
       minify: {
         collapseWhitespace: true
       },

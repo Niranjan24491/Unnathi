@@ -1,5 +1,5 @@
 {
-  "name": "Unnathi-Website",
+  "name": "unnathiwebsite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -50,6 +50,7 @@
     "cross-env": "^5.1.5",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^4.2.0",
     "node-sass": "^4.9.0",
@@ -58,9 +59,9 @@
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "url-loader": "^1.0.1",
-    "webpack": "^4.7.0",
+    "webpack": "^4.20.2",
     "webpack-bundle-analyzer": "^2.11.2",
-    "webpack-cli": "^2.1.3",
+    "webpack-cli": "^3.1.1",
     "webpack-dev-middleware": "^3.1.3",
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2"
