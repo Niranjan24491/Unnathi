@@ -93,6 +93,7 @@ class Services extends Component {
             message: "",
             alertShow: true
           });
+          alert("Your message has been sent successfully");
         })
         .catch(function(error) {
           console.log(error);
@@ -101,6 +102,7 @@ class Services extends Component {
             mail: "",
             message: ""
           });
+          alert("Your message has not been sent");
         });
     } else {
       alert("Enter all details");
