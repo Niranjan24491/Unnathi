@@ -94,7 +94,7 @@ export default class Landing extends Component {
             <Unnathi />
           </Col>
         </Row>
-        <Row>
+        <Row className="unnathi-support">
           <Col lg={12} sm={12} md={12} xs={12}>
             <Support />
           </Col>

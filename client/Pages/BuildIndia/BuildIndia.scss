@@ -109,42 +109,6 @@
       border-right: 3px solid rgba(244, 159, 236, 1);
     }
   }
-
-  @media (min-width: 320px) and (max-width: 480px) {
-    .left-useless-column {
-      padding-left: 0;
-    }
-
-    .right-useless-column {
-      padding-right: 0;
-    }
-
-    .row1,
-    .row3 {
-      h2 {
-        font-size: 16px;
-      }
-    }
-
-    .row2 {
-      h2 {
-        text-align: center;
-        margin: 0 auto;
-        font-family: "Raleway", sans-serif;
-        font-size: 16px;
-      }
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .row1,
-    .row2,
-    .row3 {
-      padding: 0;
-    }
-  }
 }
 
 .modal-dialog {
@@ -165,11 +129,6 @@
     font-family: "Ubuntu", sans-serif;
   }
 }
-
-// .accordion-head {
-//   background-color: #333333;
-//   border-bottom: 1px solid #333333;
-// }
 
 .panel-accordion {
   border: 1px solid lightgrey;
@@ -196,15 +155,7 @@
   }
 }
 
-// .active-accordion {
-//   background-color: #333333;
-// }
-
 .accordion-head {
-  // &:hover {
-  //   background-color: #333333;
-  // }
-
   h4 {
     font-family: "Ubuntu", sans-serif;
   }
@@ -229,5 +180,51 @@
     letter-spacing: 2px;
     font-weight: bold;
     list-style-position: inside;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .left-useless-column {
+    padding-left: 0;
+  }
+
+  .right-useless-column {
+    padding-right: 0;
+  }
+
+  .row1,
+  .row3 {
+    h2 {
+      font-size: 16px;
+    }
+  }
+
+  .row2 {
+    h2 {
+      text-align: center;
+      margin: 0 auto;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .row1,
+  .row2,
+  .row3 {
+    padding: 0;
+  }
+
+  .build-india-container .vision {
+    padding: 0 10%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 820px) and (orientation: landscape) {
+  .build-india-container .vision {
+    padding: 0 10%;
   }
 }

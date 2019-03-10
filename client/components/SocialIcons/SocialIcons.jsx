@@ -72,52 +72,54 @@ export default class SocialIcons extends React.Component {
     });
     return eventArray;
   };
-  modalContent = () => {
-    return (
-      <Modal show={this.state.modalShow} onHide={this.handleClose}>
-        <Modal.Body>
-          <div>
-            <h3 className="tile-header">Events</h3>
-          </div>
-          <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
-            <Tab eventKey="home" title="Concluded Events">
-              <div className="modal-div">{this.drawEvents()}</div>
-            </Tab>
-            <Tab eventKey="profile" title="Upcoming Events">
-              <h3>upcoming events</h3>
-              <div className="modal-div">{this.drawEvents()}</div>
-            </Tab>
-          </Tabs>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button
-            variant="success"
-            className="btn btn-outline-success"
-            onClick={this.handleClose}
-          >
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    );
-  };
+  
+  modalContent = () => (
+    <Modal show={this.state.modalShow} onHide={this.handleClose}>
+      <Modal.Body>
+        <div>
+          <h3 className="tile-header">Events</h3>
+        </div>
+        <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
+          <Tab eventKey="home" title="Concluded Events">
+            <div className="modal-div">{this.drawEvents()}</div>
+          </Tab>
+          <Tab eventKey="profile" title="Upcoming Events">
+            <h3>upcoming events</h3>
+            <div className="modal-div">{this.drawEvents()}</div>
+          </Tab>
+        </Tabs>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button
+          variant="success"
+          className="btn btn-outline-success"
+          onClick={this.handleClose}
+        >
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
+  );
 
-  onIconClick = (network) => {
-    switch(network) {
-      case 'facebook': {
-        window.open('https://www.facebook.com/unnathi.healing.5', '_blank');
+  onIconClick = network => {
+    switch (network) {
+      case "facebook": {
+        window.open("https://www.facebook.com/unnathi.healing.5", "_blank");
         break;
       }
-      case 'google': {
-        window.open(url, '_blank');
-        break;
-      }
-      case 'twitter': {
-        window.open(url, '_blank');
-        break;
-      }
-      case 'youtube': {
-        window.open('https://www.youtube.com/channel/UCAVdtNKZE4LgoFJmKaMqd4Q', '_blank');
+      // case 'google': {
+      //   window.open(url, '_blank');
+      //   break;
+      // }
+      // case 'twitter': {
+      //   window.open(url, '_blank');
+      //   break;
+      // }
+      case "youtube": {
+        window.open(
+          "https://www.youtube.com/channel/UCAVdtNKZE4LgoFJmKaMqd4Q",
+          "_blank"
+        );
         break;
       }
     }
@@ -134,10 +136,20 @@ export default class SocialIcons extends React.Component {
         >
           <Image src={eventsIcon} responsive rounded />
         </div>
-        <SocialIcon network="facebook" url="" onClick={(e) => this.onIconClick('facebook')} fgColor="#ffffff" />
-        <SocialIcon network="google" url="" onClick={(e) => this.onIconClick('google')} fgColor="#ffffff" />
-        <SocialIcon network="twitter" url="" onClick={(e) => this.onIconClick('twitter')} fgColor="#ffffff" />
-        <SocialIcon network="youtube" url="" onClick={(e) => this.onIconClick('youtube')} fgColor="#ffffff" />
+        <SocialIcon
+          network="facebook"
+          url=""
+          onClick={e => this.onIconClick("facebook")}
+          fgColor="#ffffff"
+        />
+        {/* <SocialIcon network="google" url="" onClick={(e) => this.onIconClick('google')} fgColor="#ffffff" />
+        <SocialIcon network="twitter" url="" onClick={(e) => this.onIconClick('twitter')} fgColor="#ffffff" /> */}
+        <SocialIcon
+          network="youtube"
+          url=""
+          onClick={e => this.onIconClick("youtube")}
+          fgColor="#ffffff"
+        />
         {this.modalContent()}
       </div>
     );

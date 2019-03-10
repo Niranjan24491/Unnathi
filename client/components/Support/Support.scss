@@ -1,8 +1,14 @@
 .support-container {
   text-align: center;
+  margin-bottom: 4%;
+
   .support-title {
     text-align: center;
     font-family: "Ubuntu", sans-serif;
+  }
+
+  span {
+    font-size: 20px;
   }
 
   .circle {
@@ -11,10 +17,10 @@
     border: 1px solid #1d809f;
     border-radius: 54px;
     margin: 0 auto;
-    margin-top: 38%;
+    margin-top: 11%;
     margin-bottom: 12%;
     cursor: pointer;
-    background-color: #f2c94d;
+    background-color: rgba(242, 201, 77, 1);
 
     .circle-image {
       margin: 0 auto;
@@ -22,11 +28,25 @@
       text-align: center;
       margin-top: 15%;
     }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
   }
 
   .projects-slide {
     margin-top: 10%;
     margin-bottom: 10%;
+  }
+}
+
+.support {
+  .modal-dialog {
+    width: 31%;
+
+    h3 {
+      text-align: center;
+    }
   }
 }
 

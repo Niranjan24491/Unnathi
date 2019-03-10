@@ -262,6 +262,96 @@ class Services extends Component {
     </div>
   );
 
+  trainingContainer = () => (
+    <div>
+      <h3>Diploma in Yogic Healing, Counselling and Leadership Skills</h3>
+      <h4>
+        “Healthy mind in a healthy body” is the objective to be achieved."
+        Communication and leadership skills are becoming essential to achieve
+        success in any field. Along with this, Unnathi is also providing hands
+        on training in healing techniques.
+      </h4>
+      <br />
+      <h4>
+        <strong>Duration of the course:</strong> 6 months{" "}
+        <strong>Eligibility:</strong> Undergraduation and above
+      </h4>
+      <br />
+      <strong>
+        <h4>Benefits:</h4>
+      </strong>
+      <ul>
+        <li>
+          You can become an actively contributing leader in Unnathi’s Build
+          India Movement.
+        </li>
+        <li>
+          This course can empower you to get a job in any school or company as a
+          counsellor cum yogic healer.
+        </li>
+        <li>You can start your own counselling service in your free time.</li>
+        <li>
+          You can utilise these skills to achieve greater success in your
+          existing profession.
+        </li>
+        <li>
+          You can utilise the course as a tool to achieve peaceful environment
+          at home and office.
+        </li>
+      </ul>
+      <br />
+      <strong>
+        <h4>
+          Enhancement of the following skills targeted during diploma course:
+        </h4>
+      </strong>
+      <ul>
+        <li>
+          Yogic healing techniques for holistic health for oneself and others{" "}
+        </li>
+        <li>Counselling and communication</li>
+        <li>Problem solving</li>
+        <li>Public speaking </li>
+        <li>Event management</li>
+        <li>Holistic methods of psychotherapy.</li>
+      </ul>
+      <br />
+      <strong>
+        <h4>Faculties </h4>
+      </strong>
+      <h4>
+        Experts from the respective fields including the faculties from NIMHANS.
+      </h4>
+      <br />
+      <strong>
+        <h4>Methodology </h4>
+      </strong>
+      <h4>
+        Theory and practical sessions are given equal importance. Mentoring,
+        follow-up and skill achievement scales will be meticulously executed.
+        After the evaluation of skills, certificate will be given.
+      </h4>
+      <br />
+      <strong>
+        <h4>Special features </h4>
+      </strong>
+      <h4>
+        Experience leadership opportunities in Unnathi’s Build India movement.
+      </h4>
+      <h4>
+        This is a movement in association with Government of Karnataka, Rajiv
+        Gandhi University of Health Sciences, Karnataka and NIMHANS, Bengaluru.{" "}
+      </h4>
+      <br />
+      <strong>
+        <h4>
+          Please note that this is a part of the fundraising and team building
+          activity of UNNATHI HEALING FOUNDATION’S BUILD INDIA MOVEMENT.
+        </h4>
+      </strong>
+    </div>
+  );
+
   render() {
     const { classes, theme } = this.props;
 
@@ -301,11 +391,12 @@ class Services extends Component {
                   {this.coachingContainer()}
                 </TabContainer>
                 <TabContainer dir={theme.direction}>
-                  <Image
+                  {/* <Image
                     src={unnathiBrochaerImg}
                     responsive
                     style={{ margin: "0 auto" }}
-                  />
+                  /> */}
+                  {this.trainingContainer()}
                 </TabContainer>
                 <TabContainer dir={theme.direction}>
                   <p className="tab-content">

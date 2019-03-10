@@ -181,67 +181,23 @@ export default class BuildIndia extends Component {
     );
   };
 
-  accordianData = () => (
-    <div>
-      <div className='vision'>
-        <h4>{BIM_DATA.accordian.vision.header}</h4>
-        <p>{BIM_DATA.accordian.vision.description}</p>
-      </div>
-      <div className='objectives'>
-        <h4>{BIM_DATA.accordian.objectives.header}</h4>
-        <ul>
-          <li>
-            To empower 1 lakh adolescents through one-to-one mentoring this
-            academic year.
-          </li>
-          <li>To scale 30 districts of Karnataka in 3 years.</li>
-          <li>To action scientifically planned interventions where required</li>
-          <li>To reach 50 lakh students in five years</li>
-        </ul>
-      </div>
-      <div className='organisations'>
-        <h4>{BIM_DATA.accordian.organisations.header}</h4>
-        <Row>
-          <Col lg={4}>
-            <h3 className='organisation-header'>
-              Department of Primary and Secondary Education, Government of
-              Karnataka
-            </h3>
-            <Image src={GovImg} responsive className='organisation-image' />
-          </Col>
-          <Col lg={4}>
-            <h3 className='organisation-header'>
-              National Institute of Mental Health and Neurosciences - NIMHANS
-            </h3>
-            <Image src={nimhansImg} responsive className='organisation-image' />
-          </Col>
-          <Col lg={4}>
-            <h3 className='organisation-header'>
-              Rajiv Gandhi University of Health Sciences, Karnataka
-            </h3>
-            <Image src={rghusImg} responsive className='organisation-image' />
-          </Col>
-        </Row>
-      </div>
-    </div>
-  );
-
   render() {
     return (
       <Grid fluid={true} className='build-india-container'>
         <Row
           style={{
             background: '#333333',
-            minHeight: '300px',
-            display: 'flex'
+            minHeight: '300px'
           }}
         >
           {this.state.imageArray.map((key, value) => {
             return (
               <Col
                 lg={3}
+                md={3}
+                sm={6}
+                xs={12}
                 style={{
-                  display: 'inline-flex',
                   verticalAlign: 'middle',
                   alignItems: 'center'
                 }}
