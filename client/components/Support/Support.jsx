@@ -26,29 +26,29 @@ export default class Support extends Component {
   onSubmitClick = () => {
     if (this.state.name && this.state.mail && this.state.message) {
       axios
-        .post(`${api}sendMail`, {
+        .post("https://niranjan-node.herokuapp.com/sendMail", {
           name: this.state.name,
           mail: this.state.mail,
           message: this.state.message,
           type: this.state.supportType
         })
-        .then(function(response) {
+        .then(response => {
           this.setState({
             name: "",
             mail: "",
             message: "",
             alertShow: true
           });
-          alert('Your message has been sent successfully');
+          alert("Your message has been sent successfully");
         })
-        .catch(function(error) {
+        .catch(error => {
           console.log(error);
           this.setState({
             name: "",
             mail: "",
             message: ""
           });
-          alert('Your message has not been sent');
+          alert("Your message has not been sent");
         });
     } else {
       alert("Enter all details");
@@ -94,7 +94,7 @@ export default class Support extends Component {
       case "volunteer": {
         return (
           <div className="support-modal">
-            <h3>Donate</h3>
+            <h3>Become a volunteer</h3>
             <div className="contact-form">
               <input
                 className="contact-form-name"
@@ -130,7 +130,7 @@ export default class Support extends Component {
           <div className="support-modal">
             <h3>Donate</h3>
             <div className="contact-form">
-             <h3>Will be supporting this soon!!!</h3>
+              <h3>Will be supporting this soon!!!</h3>
             </div>
           </div>
         );
@@ -174,7 +174,11 @@ export default class Support extends Component {
   };
 
   modalContent = () => (
-    <Modal className="support" show={this.state.modalShow} onHide={this.handleClose}>
+    <Modal
+      className="support"
+      show={this.state.modalShow}
+      onHide={this.handleClose}
+    >
       <Modal.Body>{this.onSupportClick(this.state.supportType)}</Modal.Body>
       <Modal.Footer>
         <Button
@@ -208,7 +212,7 @@ export default class Support extends Component {
             <div className="circle">
               <Image src={donateImg} responsive className="circle-image" />
             </div>
-            <span>Give Donation</span>
+            <span>Donate</span>
           </Col>
           <Col
             lg={2}
@@ -220,7 +224,7 @@ export default class Support extends Component {
             <div className="circle">
               <Image src={volunteerImg} responsive className="circle-image" />
             </div>
-            <span>Become Volunteer</span>
+            <span>Become a Volunteer</span>
           </Col>
           <Col
             lg={2}
@@ -232,11 +236,10 @@ export default class Support extends Component {
             <div className="circle">
               <Image src={registerImg} responsive className="circle-image" />
             </div>
-            <span>Register Events</span>
+            <span>Register for Events</span>
           </Col>
           <Col lg={3} md={3} sm={3} />
         </Row>
-
         {this.modalContent()}
       </Grid>
     );

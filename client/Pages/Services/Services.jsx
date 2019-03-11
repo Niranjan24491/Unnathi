@@ -17,8 +17,6 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Testimonials from "../../components/Testimonials";
 
-import unnathiBrochaerImg from "../../assets/images/unnathi-brocher.jpg";
-
 import "./Services.scss";
 
 import axios from "axios";
@@ -81,12 +79,13 @@ class Services extends Component {
   onSubmitClick = () => {
     if (this.state.name && this.state.mail && this.state.message) {
       axios
-        .post(`${api}gmail`, {
+        .post("https://niranjan-node.herokuapp.com/sendMail", {
           name: this.state.name,
           mail: this.state.mail,
-          message: this.state.message
+          message: this.state.message,
+          type: "services"
         })
-        .then(function(response) {
+        .then(response => {
           this.setState({
             name: "",
             mail: "",
@@ -95,7 +94,7 @@ class Services extends Component {
           });
           alert("Your message has been sent successfully");
         })
-        .catch(function(error) {
+        .catch(error => {
           console.log(error);
           this.setState({
             name: "",
@@ -365,6 +364,9 @@ class Services extends Component {
           </Col>
         </Row>
         <Row>
+          <Col lg={12} className="services-image" />
+        </Row>
+        <Row>
           <Col lg={2} />
           <Col lg={8}>
             <div className={classes.root} className="services-tab-container">
@@ -393,11 +395,6 @@ class Services extends Component {
                   {this.coachingContainer()}
                 </TabContainer>
                 <TabContainer dir={theme.direction}>
-                  {/* <Image
-                    src={unnathiBrochaerImg}
-                    responsive
-                    style={{ margin: "0 auto" }}
-                  /> */}
                   {this.trainingContainer()}
                 </TabContainer>
                 <TabContainer dir={theme.direction}>

@@ -48,13 +48,13 @@ export default class Contact extends Component {
   onSubmitClick = () => {
     if (this.state.name && this.state.mail && this.state.message) {
       axios
-        .post(`${api}sendMail`, {
+        .post("https://niranjan-node.herokuapp.com/sendMail", {
           name: this.state.name,
           mail: this.state.mail,
           message: this.state.message,
           type: "contact"
         })
-        .then(function(response) {
+        .then(response => {
           this.setState({
             name: "",
             mail: "",
@@ -63,7 +63,7 @@ export default class Contact extends Component {
           });
           alert("Your message has been sent successfully");
         })
-        .catch(function(error) {
+        .catch(error => {
           console.log(error);
           this.setState({
             name: "",

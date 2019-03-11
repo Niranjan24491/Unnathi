@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Row, Col, Image } from "react-bootstrap";
+import UnnathiImage from "../../assets/images/Unnathi-mind.jpg";
 
 import Services from "../Services";
 
@@ -24,6 +25,15 @@ export default class Unnathi extends Component {
         <Row>
           <Col lg={12} className="unnathi-header">
             <h1>Unnathi Mind Palace</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={12}>
+            <Image
+              src={UnnathiImage}
+              responsive
+              style={{ maxHeight: "300px", margin: "0 auto", marginTop: '3%' }}
+            />
           </Col>
         </Row>
         <Row>

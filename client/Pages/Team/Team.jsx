@@ -11,6 +11,8 @@ import tileImage5 from "../../assets/images/team/jaisri.png";
 import tileImage6 from "../../assets/images/team/geeta.png";
 import tileImage7 from "../../assets/images/team/jay.png";
 import tileImage8 from "../../assets/images/team/arathi.png";
+import tileImage9 from "../../assets/images/team/Dinesh.jpg";
+import tileImage10 from "../../assets/images/team/padmavathi.jpg";
 
 export default class Team extends Component {
   constructor(props) {
@@ -78,18 +80,10 @@ export default class Team extends Component {
             </div>
           </Col>
           <Col lg={12} className="founder-para">
-            <h4>
+            <h4 style={{textAlign: 'center'}}>
               Dr. S Kumar, Hon'ble Chancellor, Sri Devaraj Urs Academy of High
               Education and Research - Chief Advisor
             </h4>
-            <p className="align-middle">
-              Unnathi Healing Foundation was started in 2001 as registered NGO
-              with an aim to heal and rejuvenate the society. It is headed by Dr
-              Saraswathi Hegde, a psychologist with proficiency in healing
-              techniques, doctorate in Child Stress Management has been
-              spearheading various programmes to bring about harmony and
-              wellness in the society.
-            </p>
           </Col>
         </Row>
         <Row className="team-container">
@@ -120,11 +114,11 @@ export default class Team extends Component {
         <Row className="team-sub-container">
           <Col lg={2} md={0} sm={0} xs={0}/>
           <Col lg={2} md={2} sm={6} xs={6}>
-            <Image src="" responsive />
+            <Image src={tileImage10} responsive />
             <h5>Mrs Padmavathi S, Member Secretary</h5>
           </Col>
           <Col lg={2} md={2} sm={6} xs={6}>
-            <Image src="" responsive />
+            <Image src={tileImage9} responsive />
             <h5>Mr Dinesh Mahale, Legal Expert</h5>
           </Col>
           <Col lg={2} md={2} sm={6} xs={6}>

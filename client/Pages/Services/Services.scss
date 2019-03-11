@@ -111,3 +111,14 @@
     outline: none;
   }
 }
+
+.services-image {
+  width: 100%;
+  margin-bottom: 3%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-image: url(../../assets/images/Services-image.jpg);
+}
