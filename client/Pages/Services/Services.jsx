@@ -257,7 +257,7 @@ class Services extends Component {
           Developing positive attitude
         </Button>
         <Button className="services-button" style={{ pointerEvents: "none" }}>
-          Deleting
+          Deleting old memories
         </Button>
       </div>
     </div>
