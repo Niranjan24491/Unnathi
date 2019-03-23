@@ -2,6 +2,10 @@
   .contact-header {
     text-align: center;
     font-family: "Ubuntu", sans-serif;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #CD5542;
+    margin-bottom: 2%;
   }
 
   .contact-tile {
@@ -53,6 +57,7 @@
 
     .contact-form-title {
       font-family: "Ubuntu", sans-serif;
+      text-align: center;
     }
 
     .contact-form-name,

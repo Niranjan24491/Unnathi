@@ -15,6 +15,11 @@ import "react-vertical-timeline-component/style.min.css";
 
 import "./About.scss";
 
+import actionImg1 from "../../assets/images/actions/actions1.jpg";
+import actionImg2 from "../../assets/images/actions/actions2.jpg";
+import actionImg3 from "../../assets/images/actions/actions3.jpg";
+import actionImg4 from "../../assets/images/actions/actions4.jpg";
+
 const MEDIA = [
   "ITV, New York USA",
   "TV9 Kannada",
@@ -24,15 +29,6 @@ const MEDIA = [
   "Shankara TV",
   "Ayush TV"
 ];
-
-const ABOUT_DATA = {
-  content: `Unnathi means upliftment. Upliftment is needed in physical, emotional, mental, spiritual levels.
-  Upliftment is needed in our quality of life. Unnathi was started with the intention to create a
-  platform for those going through a challenging time to uplift themselves. The modern education is
-  giving tools and techniques to handle the outer world. Unnathi is providing systematic and scientific
-  tools of making oneself internally strong and well equipped to take up challenges of life. With this
-  aim, Unnathi has wings to reach out all strata of society.`
-};
 
 export default class About extends Component {
   constructor(props) {
@@ -109,7 +105,25 @@ export default class About extends Component {
       <Grid fluid={true} className="about-container">
         <Row>
           <Col lg={12} className="about-para">
-            <p>{ABOUT_DATA.content}</p>
+            <p>
+              <strong>Unnathi Healing Foundation (Unnathi)</strong> is a
+              registered charitable trust established in 2001, having 80G and
+              12A certificates.
+            </p>
+            <br />
+            <p className="paragraph">
+              <strong>Unnathi</strong> means upliftment. Upliftment is needed in
+              physical, emotional, mental, spiritual levels. Upliftment can make
+              our life much more peaceful, happier, healthier and successful. At
+              any stage of life upliftment is essential.{" "}
+              <strong>Unnathi</strong> is providing systematic and scientific
+              tools of making oneself internally strong and well equipped to
+              take up challenges of life. Transformation from receiving end to
+              giving end is what makes
+              <strong>Unnathi</strong> to standout from others. With this aim,{" "}
+              <strong>Unnathi</strong> has various wings to reach out all strata
+              of society.
+            </p>
           </Col>
         </Row>
         <Row>
@@ -120,12 +134,32 @@ export default class About extends Component {
                 isExpanded={true}
                 className="additionalClassForHead"
               >
-                <h4>Achievements of UNNATHI</h4>
+                <h3>
+                  Actions that Speak about Unnathi <span>( CLICK HERE )</span>
+                </h3>
               </CollapsibleHead>
               <CollapsibleContent
                 isExpanded={false}
                 className="additionalClassForContent"
               >
+                <div className="actions-image-container row">
+                  <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <Image
+                      src={actionImg1}
+                      responsive
+                      style={{ height: "300px" }}
+                    />
+                  </div>
+                  <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <Image src={actionImg2} responsive />
+                  </div>
+                  <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <Image src={actionImg3} responsive />
+                  </div>
+                  <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <Image src={actionImg4} responsive />
+                  </div>
+                </div>
                 <VerticalTimeline>
                   <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -141,26 +175,22 @@ export default class About extends Component {
                     </h3>
                     <ul>
                       <li>
-                        100,000 individuals were trained in Pranic and Yogic
+                        1,00,000 individuals were trained in Pranic and Yogic
                         Healing in Bangalore, Mysore, Davanagere, Bellary,
                         Raichur , Mangalore, Sirsi, Belagavi, Hassan, Koppal
                         from 2001.
                       </li>
                       <li>
-                        15000 and more children were taught self-healing
+                        15,000 and more children were taught self-healing
                         throughout Karnataka.
                       </li>
                       <li>
-                        5000 and more yogic healing and health awareness
-                        programs were conducted all over the world from 2001.
+                        2000 and more yogic healing and health awareness
+                        programs were conducted all over the world from 2001
                       </li>
                       <li>
-                        500 and more Free yogic healing camps were organised all
-                        over Karnataka from 2001.
-                      </li>
-                      <li>
-                        Priests from temples and Mutts in Sirsi were trained in
-                        yogic healing techniques.
+                        Priests, teachers and group leaders in various places
+                        were trained to help the people associated with them.
                       </li>
                     </ul>
                   </VerticalTimelineElement>
@@ -199,13 +229,18 @@ export default class About extends Component {
                     </h3>
                     <ul>
                       <li>
-                        6000 Kannadigas were trained on meditation during 5th
-                        AKKA conference in Chicago in August 2008
+                        2,000 Kannadigas were trained on meditation during 5th
+                        AKKA conference in Chicago, USA, in August 2008.
                       </li>
                       <li>
-                        200 Stress management programmes has been rolled out,
-                        covering more than 4000 participants from various MNC’s
-                        in Bangalore and Mysore.
+                        100 Stress management programmes has been rolled out,
+                        covering more than 4000 participants from various
+                        organisations and MNC’s in Bangalore , Mysore Coimbatore
+                        to name it Infosys, Accenture, BHEL Everest etc.
+                      </li>
+                      <li>
+                        Conduced a training sessions for yoga practitioners in
+                        Bali, Indonesia.
                       </li>
                       <li>
                         40 members of staff were trained in Pranic Healing and
@@ -214,8 +249,8 @@ export default class About extends Component {
                         Bengaluru.
                       </li>
                       <li>
-                        40 NGO’s were trained in yogic healing under Unnathi’s
-                        Reach Out programme
+                        Worked in collaboration with international clubs like
+                        Rotary and Lions.
                       </li>
                     </ul>
                   </VerticalTimelineElement>
@@ -238,20 +273,17 @@ export default class About extends Component {
                       </li>
                       <li>
                         40 children and 10 teachers from The Association of
-                        People with Disability (APD) were trained in yogic
-                        healing techniques.
+                        People with Disability (APD),Bangalore were trained in
+                        yogic healing techniques.
                       </li>
                       <li>
-                        200 Aganwadi workers were trained in Healthcare,
+                        200 Anganawadi workers were trained in Healthcare,
                         Meditation and Pranic healing in the state of Karnataka.
                       </li>
                       <li>
-                        200 blind children were taught meditation and self
-                        healing.
-                      </li>
-                      <li>
-                        Hundreds of differently abled children were taught Super
-                        Brain Yoga, self-healing.
+                        200 visually challenged children and Hundreds of
+                        differently abled were taught meditation and self
+                        healing.Super Brain Yoga.
                       </li>
                       <li>
                         Supported other organisations by Donating clothes,
@@ -259,7 +291,11 @@ export default class About extends Component {
                       </li>
                       <li>
                         Continuous support with yogic healing for three months
-                        to children with brain disorders in Bengaluru.
+                        to children with cerebral palsy in Bengaluru.
+                      </li>
+                      <li>
+                        25 NGO’s from across Karnataka were trained in yogic
+                        healing.
                       </li>
                     </ul>
                   </VerticalTimelineElement>
@@ -282,26 +318,26 @@ export default class About extends Component {
                         programme.
                       </li>
                       <li>
-                        200 Aganwadi workers were trained in Healthcare,
-                        Meditation and Pranic healing in the state of Karnataka.
-                      </li>
-                      <li>
                         50 inmates of Open Air Jail, Parappana agrahara,
                         Bengaluru were benefited through the BASE programme
                         (Balancing Addiction and Strengthening Energies).
                       </li>
                       <li>
-                        50 personnel from the Department of Police were
+                        50 personnel from the Department of Home (Police) were
                         benefitted through a programme on Stress management and
                         Meditation.
                       </li>
                       <li>
-                        Donated 35kg washing machine for District Child
+                        Donated 35kg capacity washing machine for District Child
                         Protection Unit, Bengaluru.
                       </li>
                       <li>
-                        Donated 35kg washing machine to Sumangali Seva Ashram,
-                        Bengaluru.
+                        Donated 35kg capacity washing machine to Sumangali Seva
+                        Ashram, Bengaluru.
+                      </li>
+                      <li>
+                        Rag pickers children were supported at Sumangali Seva
+                        Ashram in Bangalore.
                       </li>
                     </ul>
                   </VerticalTimelineElement>
@@ -321,7 +357,7 @@ export default class About extends Component {
                       <li>
                         1500 students of BBMP Girls High School and PU College
                         were provided vocational training on phenoly making,
-                        diya painting, gardening
+                        diya painting, gardening.
                       </li>
                       <li>
                         300 schools covering 7000 children were trained in
@@ -331,10 +367,6 @@ export default class About extends Component {
                         1800 children in District Child Protection Unit,
                         Bangalore were trained on meditation in a year-long
                         programme.
-                      </li>
-                      <li>
-                        Awareness programme to members of Maharastra Mandal,
-                        Bengaluru.
                       </li>
                       <li>
                         15000 and more children were taught self-healing
@@ -348,6 +380,10 @@ export default class About extends Component {
                       <li>
                         Hundred plus students were provided training basics of
                         computer operations.
+                      </li>
+                      <li>
+                        Regularly supporting women and children at Sumagali Seva
+                        ashram Bangalore.
                       </li>
                     </ul>
                   </VerticalTimelineElement>
@@ -365,12 +401,8 @@ export default class About extends Component {
                     </h3>
                     <ul>
                       <li>
-                        40,000 notebook were distributed to Government schools
-                        throughout Karnataka
-                      </li>
-                      <li>
-                        500 and more Free yogic healing camps were organised all
-                        over Karnataka from 2001.
+                        500 and more Free Pranic healing and yogic healing camps
+                        were organised all over Karnataka from 2001.
                       </li>
                       <li>
                         500 people were benefitted from free healing during
@@ -379,7 +411,7 @@ export default class About extends Component {
                       </li>
                       <li>
                         175 senior citizens from Dignity Foundation, Coffee
-                        Board Chavadi were coached on handling old age and
+                        Board Chavadi were taught on handling old age and
                         relationship management.
                       </li>
                       <li>
@@ -387,40 +419,27 @@ export default class About extends Component {
                         in half a day programme on addressing stress in
                         students.
                       </li>
-                    </ul>
-                  </VerticalTimelineElement>
-                  <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date=""
-                    iconStyle={{
-                      background: "rgb(233, 30, 99)",
-                      color: "#fff"
-                    }}
-                    icon={<img className="icon-image" src={star} />}
-                  >
-                    <h3 className="vertical-timeline-element-title">
-                      Youth and leadership
-                    </h3>
-                    <ul>
-                      <li>
-                        10,000 and more students were provided coaching on
-                        better performance, facing exam with confidence, study
-                        techniques, memory and concentration enhancement
-                        techniques were conducted for various government schools
-                      </li>
-                      <li>
-                        4000 and more medical students from 20 health science
-                        colleges were trained on counselling, public speaking,
-                        leadership skills and relationship management.
-                      </li>
-                      <li>
-                        5000 and more students from Engineering, MBA, Law
-                        colleges were taught public speaking and leadership
-                        skills.
-                      </li>
                       <li>
                         500 and more NSS students were taught self-motivation
-                        and leadership skills.
+                        and leadership skills
+                      </li>
+                      <li>
+                        Organising programmes for various MNC to support govt
+                        schools under ‘CSR activities’.
+                      </li>
+                      <li>
+                        Arogya santhe( health fare ) was organised in a large
+                        scale at cocoon park, Bangalore{" "}
+                      </li>
+                      <li>
+                        1,500 students from 10th and 12th. Class got benefited
+                        from guidance and mentoring sessions on facing board
+                        exams.{" "}
+                      </li>
+                      <li>
+                        200 Medical students were helped before facing their
+                        first years final exam, which is considered to be most
+                        crucial in the medical course.
                       </li>
                     </ul>
                   </VerticalTimelineElement>

@@ -95,31 +95,12 @@ export default class Support extends Component {
         return (
           <div className="support-modal">
             <h3>Become a volunteer</h3>
-            <div className="contact-form">
-              <input
-                className="contact-form-name"
-                type="text"
-                onKeyUp={e => this.onInputChange("name", e)}
-                placeholder="Your Name"
-              />
-              <input
-                className="contact-form-mail"
-                type="text"
-                onKeyUp={e => this.onInputChange("mail", e)}
-                placeholder="Your Email"
-              />
-              <textarea
-                className="contact-form-message"
-                type="text"
-                onKeyUp={e => this.onInputChange("message", e)}
-                placeholder="Your Message"
-              />
-              <button
-                className="contact-submit-button"
-                onClick={e => this.onSubmitClick()}
-              >
-                Submit
-              </button>
+            <div>
+              <h4>Click on the link below</h4>
+              <br />
+              <a href="https://docs.google.com/forms/d/1NCnFPmFWEsU2UBQV2iJyxPnpxboklXjngwk3oQx5TaI/edit" target="_blank">
+                VOLUNTEER
+              </a>
             </div>
           </div>
         );

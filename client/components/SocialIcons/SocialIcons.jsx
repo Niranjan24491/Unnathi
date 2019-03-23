@@ -4,15 +4,15 @@ import { Image, Modal, Button, Tabs, Tab } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
 import eventsIcon from "../../assets/images/calendar.png";
 
-import event1 from '../../assets/images/events/event1.png';
-import event2 from '../../assets/images/events/event2.png';
-import event3 from '../../assets/images/events/event3.png';
-import event4 from '../../assets/images/events/event4.png';
-import event5 from '../../assets/images/events/event5.png';
-import event6 from '../../assets/images/events/event6.png';
-import event7 from '../../assets/images/events/event7.png';
-import event8 from '../../assets/images/events/event8.png';
-import event9 from '../../assets/images/events/event9.png';
+import event1 from "../../assets/images/events/event1.png";
+import event2 from "../../assets/images/events/event2.png";
+import event3 from "../../assets/images/events/event3.png";
+import event4 from "../../assets/images/events/event4.png";
+import event5 from "../../assets/images/events/event5.png";
+import event6 from "../../assets/images/events/event6.png";
+import event7 from "../../assets/images/events/event7.png";
+import event8 from "../../assets/images/events/event8.png";
+import event9 from "../../assets/images/events/event9.png";
 
 export default class SocialIcons extends React.Component {
   constructor(props) {
@@ -123,7 +123,7 @@ export default class SocialIcons extends React.Component {
           </Tab>
           <Tab eventKey="profile" title="Upcoming Events">
             <h3>upcoming events</h3>
-            <div className="modal-div">{this.drawEvents()}</div>
+            {/* <div className="modal-div">{this.drawEvents()}</div> */}
           </Tab>
         </Tabs>
       </Modal.Body>
@@ -166,6 +166,7 @@ export default class SocialIcons extends React.Component {
   render() {
     return (
       <div className="social-container">
+        <span className="events-div">Events</span>
         <div
           className="events-icon"
           onClick={e => {

@@ -10,17 +10,17 @@ export default class Navbar extends React.Component {
     }
 
     onNavClick = (e) => {
-        // const tesNode = document.getElementById('about');
-        // window.scrollTo(0, tesNode.offsetTop);
         this.props.onNavClick(e);
         e.stopPropagation();
+        let menuList = document.getElementById('input');
+        menuList.checked = false;
     }
 
     render() {
         return (
             <nav role="navigation">
                 <div id="menuToggle">
-                    <input type="checkbox" />
+                    <input id="input" type="checkbox" />
                     <span></span>
                     <span></span>
                     <span></span>

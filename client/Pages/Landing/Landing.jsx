@@ -10,7 +10,6 @@ import Support from "../../components/Support";
 import Services from "../Services";
 import Team from "../Team";
 import Unnathi from "../Unnathi";
-import LandingLoader from "../../components/LandingLoader";
 import SocialIcons from "../../components/SocialIcons";
 import Testimonials from "../../components/Testimonials";
 

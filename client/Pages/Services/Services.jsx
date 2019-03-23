@@ -129,148 +129,150 @@ class Services extends Component {
 
   healingContainer = () => (
     <div>
-      <h3>Healing </h3>
+      <h3>Yogic Healing </h3>
       <p className="tab-content">
         Health depends on the inner state of the person. All health problems
         cannot be resolved only through medicines and treatments. Yogic Healing
-        is a holistic system of increasing the inert healing potential within
-        oneself to develop one’s overall well-being
+        is a holistic system of increasing the inner healing potential within
+        oneself to develop one’s overall well-being. It is a non invasive
+        therapy highly beneficial in solving all kind of health problems. It is
+        method where healers will provide appropriate energy to the body and
+        mind of the patient.
       </p>
       <h4>Different kinds of healing </h4>
       <div className="tab-icons">
-        <OverlayTrigger
-          placement="bottom"
-          overlay={
-            <Tooltip id="tooltip-disabled">Helps in avoiding disease</Tooltip>
-          }
-        >
-          <span className="d-inline-block">
-            <Button
-              className="services-button"
-              style={{ pointerEvents: "none" }}
+        <ul>
+          <li>
+            Preventive Healing - Helps in protecting good health and preventing
+            diseases. ’Prevention is better than cure’
+          </li>
+          <li>
+            Curative Healing - Diabetes, hypertension, arthritis and many more
+            systemic diseases need more adjuvant support. It is essential and
+            inevitable to have such support to improve the quality of life on a
+            long term.
+          </li>
+          <li>
+            Rejuvenating and reversal therapy - Since recovery power is a hidden
+            potential within, enhancing the inner healing power will make the
+            body return to its natural healthy state and it is possible through
+            Yogic Healing methods{" "}
+          </li>
+          <li>
+            Pre and Post surgery support- Facing and managing inevitable
+            situations are very challenging for the patients as well as the
+            family members. Unnathi will be a pillar of strength and supporting
+            through its healing, guidance, prayers and blessings.
+          </li>
+        </ul>
+      </div>
+      <h4>Distant healing –Call a healer </h4>
+      <div className="tab-icons">
+        <ul>
+          <li>
+            Distant healing is an option that you can avail while going through
+            all kinds of physical and emotional challenges.
+          </li>
+          <li>
+            It is method where healers provide the support from any distance.
+            Energy is like internet existing everywhere. Well trained, skillful
+            and dedicated healers from Unnathi will make the recovery process
+            smother and faster.
+          </li>
+          <li>
+            Send a healing request
+            <a
+              href="https://docs.google.com/forms/d/11cEHRtn_Ev4dbG3oAM3_gwY2tKvApTYWY2ssViM80X8/edit"
+              target="_blank"
             >
-              Preventive healing
-            </Button>
-          </span>
-        </OverlayTrigger>
-        <OverlayTrigger
-          placement="bottom"
-          overlay={
-            <Tooltip id="tooltip-disabled">
-              Helps in coming out of disease
-            </Tooltip>
-          }
-        >
-          <span className="d-inline-block">
-            <Button
-              className="services-button"
-              style={{ pointerEvents: "none" }}
-            >
-              Curative Healing
-            </Button>
-          </span>
-        </OverlayTrigger>
-        <OverlayTrigger
-          placement="bottom"
-          overlay={
-            <Tooltip id="tooltip-disabled">
-              Helps control the disease from worsening
-            </Tooltip>
-          }
-        >
-          <span className="d-inline-block">
-            <Button
-              className="services-button"
-              style={{ pointerEvents: "none" }}
-            >
-              Maintenance
-            </Button>
-          </span>
-        </OverlayTrigger>
-        <OverlayTrigger
-          placement="bottom"
-          overlay={
-            <Tooltip id="tooltip-disabled">
-              Pre and Post surgery support
-            </Tooltip>
-          }
-        >
-          <span className="d-inline-block">
-            <Button
-              className="services-button"
-              style={{ pointerEvents: "none" }}
-            >
-              Pre and Post surgery support
-            </Button>
-          </span>
-        </OverlayTrigger>
+              LINK
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );
 
   coachingContainer = () => (
     <div>
-      <h3>Coaching </h3>
+      <h3>Counselling and Coaching </h3>
       <p className="tab-content">
-        Regular coaching, guidance, mentoring and support will surely help a
-        person to come out of old negative patterns and habits to change
-        themselves
+        Understanding the root cause and eradicating it will definitely assure a
+        better quality of life provided through counselling. Regular coaching,
+        guidance, mentoring and support will surely help a person to come out of
+        old negative patterns and habits to change themselves. ‘Train them
+        Young’- Help children to develop good self esteem
       </p>
-      <h4>Different kinds of coaching </h4>
+      <h4>Healing for children</h4>
       <div className="tab-icons">
-        <OverlayTrigger
-          placement="bottom"
-          overlay={
-            <Tooltip id="tooltip-disabled">
-              Leadership skills and public speaking
-            </Tooltip>
-          }
-        >
-          <span className="d-inline-block">
-            <Button
-              className="services-button"
-              style={{ pointerEvents: "none" }}
+        <span className="tab-icons-span">
+          Every child is the dream of a family. Avoid taking risks with your
+          child. Learn to seek help to heal childs’ behavioural problems,
+          depression, addictions, learning difficulties, anxiety or any other
+          challenges.
+        </span>
+        <ul>
+          <li>
+            Take a step forward of extending healing support to children in case
+            of chronic health problems and systemic disease.
+          </li>
+          <li>
+            Unnathi empowers young generation with easily adaptable and
+            reachable methods to achieve their dreams and goals.
+          </li>
+        </ul>
+      </div>
+      <h4>
+        Every counselling and coaching is tailor-made. Sample topics are as
+        mentioned below-
+      </h4>
+      <div className="tab-icons">
+        <ul>
+          <li>
+            Personality development - Leadership skills and public speaking
+          </li>
+          <li>Anger and mood management</li>
+          <li>Concentration and memory</li>
+          <li>Positive bonding with family members</li>
+          <li>Digital detox</li>
+          <li>Weight management</li>
+          <li>Career guidance</li>
+          <li>Developing positive attitude</li>
+          <li>Deleting old memories</li>
+          <li>
+            Send a healing request
+            <a
+              href="https://docs.google.com/forms/d/11cEHRtn_Ev4dbG3oAM3_gwY2tKvApTYWY2ssViM80X8/edit"
+              target="_blank"
             >
-              Personality development
-            </Button>
-          </span>
-        </OverlayTrigger>
-        <Button className="services-button" style={{ pointerEvents: "none" }}>
-          Anger and mood management
-        </Button>
-        <Button className="services-button" style={{ pointerEvents: "none" }}>
-          Concentration and memory
-        </Button>
-        <Button className="services-button" style={{ pointerEvents: "none" }}>
-          Positive bonding with family members
-        </Button>
-        <Button className="services-button" style={{ pointerEvents: "none" }}>
-          Digital detox
-        </Button>
-        <Button className="services-button" style={{ pointerEvents: "none" }}>
-          Weight management
-        </Button>
-        <Button className="services-button" style={{ pointerEvents: "none" }}>
-          Career guidance
-        </Button>
-        <Button className="services-button" style={{ pointerEvents: "none" }}>
-          Developing positive attitude
-        </Button>
-        <Button className="services-button" style={{ pointerEvents: "none" }}>
-          Deleting old memories
-        </Button>
+              LINK
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );
 
   trainingContainer = () => (
     <div>
+      <div className="training-header">
+        <span>
+          The purpose of training is to cultivate the habit of internal and
+          external strength, clarity and values leading to a healthy and happy
+          life. Unnathi is providing a specialised short term and long term
+          training courses for healthy living.
+        </span>
+        <span>
+          ‘Give a man a fish and you feed him for a day, teach a man to fish and
+          you feed him for a lifetime’
+        </span>
+      </div>
       <h3>Diploma in Yogic Healing, Counselling and Leadership Skills</h3>
       <h4>
-        “Healthy mind in a healthy body” is the objective to be achieved."
-        Communication and leadership skills are becoming essential to achieve
-        success in any field. Along with this, Unnathi is also providing hands
-        on training in healing techniques.
+        “Healthy mind in a healthy body” is the objective." Communication and
+        leadership skills are becoming essential to achieve success in any
+        field. Along with this, Unnathi is also providing hands on training in
+        Yogic healing and psychotherapy techniques.
       </h4>
       <br />
       <h4>
@@ -279,77 +281,74 @@ class Services extends Component {
       </h4>
       <br />
       <strong>
-        <h4>Benefits:</h4>
-      </strong>
-      <ul>
-        <li>
-          You can become an actively contributing leader in Unnathi’s Build
-          India Movement.
-        </li>
-        <li>
-          This course can empower you to get a job in any school or company as a
-          counsellor cum yogic healer.
-        </li>
-        <li>You can start your own counselling service in your free time.</li>
-        <li>
-          You can utilise these skills to achieve greater success in your
-          existing profession.
-        </li>
-        <li>
-          You can utilise the course as a tool to achieve peaceful environment
-          at home and office.
-        </li>
-      </ul>
-      <br />
-      <strong>
         <h4>
-          Enhancement of the following skills targeted during diploma course:
+          Enhancement of the following knowledge and skills aimed at during
+          diploma course:
         </h4>
       </strong>
       <ul>
         <li>
-          Yogic healing techniques for holistic health for oneself and others{" "}
+          Yogic healing techniques for holistic health for oneself and others
         </li>
-        <li>Counselling and communication</li>
+        <li>Counselling and communication skills</li>
         <li>Problem solving</li>
-        <li>Public speaking </li>
+        <li>Public speaking</li>
         <li>Event management</li>
         <li>Holistic methods of psychotherapy.</li>
       </ul>
-      <br />
-      <strong>
-        <h4>Faculties </h4>
-      </strong>
       <h4>
-        Experts from the respective fields including the faculties from NIMHANS.
-      </h4>
-      <br />
-      <strong>
-        <h4>Methodology </h4>
-      </strong>
-      <h4>
-        Theory and practical sessions are given equal importance. Mentoring,
-        follow-up and skill achievement scales will be meticulously executed.
-        After the evaluation of skills, certificate will be given.
-      </h4>
-      <br />
-      <strong>
-        <h4>Special features </h4>
-      </strong>
-      <h4>
-        Experience leadership opportunities in Unnathi’s Build India movement.
+        Credentials- certificate of diploma in yogic healing, counselling and
+        leadership-by Unnathi healing foundation
       </h4>
       <h4>
-        This is a movement in association with Government of Karnataka, Rajiv
-        Gandhi University of Health Sciences, Karnataka and NIMHANS, Bengaluru.{" "}
+        Internship certificate – from Unnathi healing foundation and Government
+        of Karnataka
       </h4>
       <br />
-      <strong>
-        <h4>
-          Please note that this is a part of the fundraising and team building
-          activity of UNNATHI HEALING FOUNDATION’S BUILD INDIA MOVEMENT.
-        </h4>
-      </strong>
+      <h3>Kriyashakthi for success and prosperity(details):</h3>
+      <br />
+      <h4>
+        <strong>Duration of the course:</strong> 3 days of training and 21 days
+        of practice.
+        <strong>Eligibility:</strong> 16years of age and Above.
+      </h4>
+      <br />
+      <h4>This is for the persons whoever has:</h4>
+      <ul>
+        <li>
+          Willingness and commitment to achieve success in life with ease and
+          peace
+        </li>
+        <li>Enthusiasm to know the secret of law of attraction</li>
+        <li>Ready to erase the habit of failure and poverty</li>
+        <li>The habit of manifesting each wish on time systematically</li>
+        <li>To get a right job/partner</li>
+        <li>Recover dues and property</li>
+        <li>Manifesting good health and better relationship at home</li>
+      </ul>
+      <br />
+      <h3>Healer’s certification course (details):</h3>
+      <br />
+      <h4>
+        <strong>Duration of the course:</strong> 6 months
+        <strong>Eligibility:</strong> 16years of age and Above.
+      </h4>
+      <br />
+      <h4>
+        This programme for the people who wants to explore beyond physical
+        nature of existence:
+      </h4>
+      <ul>
+        <li>Utilising the Pranic energy for healing and blessing.</li>
+        <li>To increase the goodness in the surroundings.</li>
+        <li>To alleviate the sufferings of others </li>
+        <li>Willingness for spiritual growth</li>
+        <li>Inner quest to know oneself.</li>
+      </ul>
+      <br />
+      <h4>
+        Contact us for various short term courses on healing and meditation.
+      </h4>
     </div>
   );
 

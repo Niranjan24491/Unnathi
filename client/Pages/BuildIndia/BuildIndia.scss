@@ -1,12 +1,18 @@
 .build-india-container {
+
   h1 {
     font-family: "Ubuntu", sans-serif;
     text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #CD5542;
   }
 
   h3 {
     font-family: "Raleway", sans-serif;
     text-align: center;
+    margin: 1% 0;
+    font-weight: bold;
   }
 
   .collaborators {
@@ -25,10 +31,17 @@
     h3 {
       text-align: center;
       font-size: 24px;
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration-color: #CD5542;
     }
 
     p {
       font-size: 20px;
+      padding: 1%;
+      border-left: 5px solid #CD5542;
+      border-right: 5px solid #CD5542;
+      text-align: center;
     }
   }
 
@@ -48,6 +61,9 @@
       text-align: center;
       margin: 0 auto;
       font-family: "Raleway", sans-serif;
+      border-left: 5px solid #CD5542;
+      padding: 2%;
+      border-right: 5px solid #CD5542;
     }
   }
 
@@ -77,7 +93,9 @@
 
     img {
       margin: 0 auto;
-      width: 34%;
+      width: 46%;
+      margin-top: 2%;
+      margin-bottom: 2%;
     }
   }
 
@@ -133,7 +151,7 @@
 .panel-accordion {
   border: 1px solid lightgrey;
   border-radius: 12px;
-  background: #d7d7d7;
+  background: #d7d7d7 !important;
 
   p {
     padding: 2%;
@@ -171,7 +189,20 @@
 }
 
 .tile-points-container {
-  padding: 2%;
+  padding: 0% 2% 2% 2%;
+
+  .tile-points {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #2d2b2b;
+    letter-spacing: 2px;
+    font-weight: bold;
+    list-style-position: inside;
+  }
+}
+
+.tile-points-container1 {
+  padding: 2% 2% 0% 2%;
 
   .tile-points {
     font-family: "Raleway", sans-serif;
@@ -208,7 +239,7 @@
     }
 
     img {
-      width: 100%;
+      width: 100% !important;
     }
   }
 
@@ -226,5 +257,12 @@
 @media only screen and (min-width: 480px) and (max-width: 820px) and (orientation: landscape) {
   .build-india-container .vision {
     padding: 0 10%;
+  }
+}
+
+.tileImages {
+  img {
+    margin: 0 auto;
+
   }
 }

@@ -69,6 +69,10 @@
     width: 30px !important;
     height: 30px !important;
   }
+
+  .events-div {
+    display:none;
+  }
 }
 
 .event-card {
@@ -142,4 +146,13 @@
     width: 50px !important;
     height: 50px !important;
   }
+  .events-div {
+    display:none;
+  }
+}
+
+.events-div {
+  color: #cd5542;
+  font-weight: bold;
+  padding-left: 22%;
 }

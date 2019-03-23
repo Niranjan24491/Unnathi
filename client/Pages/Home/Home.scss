@@ -6,8 +6,9 @@
     background-color: rgba(0, 0, 0, 0.7);
 
     .logo-image {
-      width: 100px;
+      width: 165px;
       margin: 1%;
+      margin-left: 3%;
     }
   }
   .Home {
@@ -17,7 +18,7 @@
     font-size: 72px;
     font-family: "Ubuntu", sans-serif;
     position: absolute;
-    top: 17%;
+    top: 21%;
     left: 22%;
   }
 
@@ -25,9 +26,12 @@
     font-size: 45px;
     font-family: "Ubuntu", sans-serif;
     position: absolute;
-    top: 26%;
+    top: 30%;
     left: 56%;
     font-style: italic;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #CD5542;
   }
 }
 
@@ -50,7 +54,7 @@
     }
 
     .logo-image {
-      width: 60px !important;
+      width: 75px !important;
       margin: 1%;
       margin-left: 4% !important;
     }
@@ -76,7 +80,7 @@
     }
 
     .logo-image {
-      width: 60px !important;
+      width: 85px !important;
       margin: 1%;
       margin-left: 4% !important;
     }

@@ -113,6 +113,13 @@ export default class Testimonials extends React.Component {
     );
   };
 
+  onVideoCLick = () => {
+    window.open(
+      "https://www.youtube.com/channel/UCAVdtNKZE4LgoFJmKaMqd4Q",
+      "_blank"
+    );
+  };
+
   renderVideos = () => {
     return (
       <div className="video-container">
@@ -120,12 +127,24 @@ export default class Testimonials extends React.Component {
         <Row>
           <Col lg={1} />
           <Col lg={5}>
-            <iframe src="https://www.youtube.com/embed/iG2ukc-vk4g" />
+            <iframe src="https://www.youtube.com/embed/8RkCoQaBFWA" />
           </Col>
           <Col lg={5}>
             <iframe src="https://www.youtube.com/embed/DAmrRMqmRhE" />
           </Col>
           <Col lg={1} />
+        </Row>
+        <Row>
+          <Col
+            lg={12}
+            md={12}
+            sm={12}
+            xs={12}
+            className="video-click"
+            onClick={e => this.onVideoCLick()}
+          >
+            <h3>To view more videos, CLICK here</h3>
+          </Col>
         </Row>
       </div>
     );
