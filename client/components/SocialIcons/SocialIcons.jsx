@@ -4,15 +4,17 @@ import { Image, Modal, Button, Tabs, Tab } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
 import eventsIcon from "../../assets/images/calendar.png";
 
-import event1 from "../../assets/images/events/event1.png";
-import event2 from "../../assets/images/events/event2.png";
-import event3 from "../../assets/images/events/event3.png";
-import event4 from "../../assets/images/events/event4.png";
+// import event1 from "../../assets/images/events/event1.png";
+// import event2 from "../../assets/images/events/event2.png";
+// import event3 from "../../assets/images/events/event3.png";
+// import event4 from "../../assets/images/events/event4.png";
 import event5 from "../../assets/images/events/event5.png";
 import event6 from "../../assets/images/events/event6.png";
 import event7 from "../../assets/images/events/event7.png";
 import event8 from "../../assets/images/events/event8.png";
 import event9 from "../../assets/images/events/event9.png";
+import Teen_InsiderImg from '../../assets/images/Teen_Insider.jpg';
+import Kriya_Shakti_Img from '../../assets/images/events/Kriya_Shakthi_Img.jpg';
 
 export default class SocialIcons extends React.Component {
   constructor(props) {
@@ -21,43 +23,37 @@ export default class SocialIcons extends React.Component {
       modalShow: false,
       eventsData: [
         {
-          img: event1,
-          date: "Jan 1st 2016",
-          title: "Hosa Chiguru Hale Beru",
-          description: ""
+          img: Teen_InsiderImg,
+          date: "Mar 31st 2019",
+          title: "Teen Insider - Inside the mind of a Teenager",
+          description: "Understand adolescence by our energetic team of adolescents in their own words!! Participation by prior registration on first cum first served basis!!"
         },
-        {
-          img: event2,
-          date: "Aug 7th 2016",
-          title:
-            "Donating Industrial Washing Machine to District Child Protection Unit, Bangalore",
-          description: ""
-        },
-        {
-          img: event3,
-          date: "Aug 7th 2016",
-          title:
-            "Academic Stress Management Session by Medical Students at BEL High School, Jalahalli",
-          description: ""
-        },
-        {
-          img: event4,
-          date: "Nov 19th 2016",
-          title: "Healing Camp at AMBA",
-          description: "Centre for differently abled children"
-        },
-        {
-          img: event5,
-          date: "Jan 8th 2017",
-          title: "Aarogya Santhe",
-          description: "Importance of helathy daily routine – public awareness"
-        },
-        {
-          img: event6,
-          date: "Feb 11th 2017",
-          title: "Life is my Choice",
-          description: "Preventing academic stress and Will for Transformation"
-        },
+        // {
+        //   img: event1,
+        //   date: "Jan 1st 2016",
+        //   title: "Hosa Chiguru Hale Beru",
+        //   description: ""
+        // },
+        // {
+        //   img: event2,
+        //   date: "Aug 7th 2016",
+        //   title:
+        //     "Donating Industrial Washing Machine to District Child Protection Unit, Bangalore",
+        //   description: ""
+        // },
+        // {
+        //   img: event3,
+        //   date: "Aug 7th 2016",
+        //   title:
+        //     "Academic Stress Management Session by Medical Students at BEL High School, Jalahalli",
+        //   description: ""
+        // },
+        // {
+        //   img: event4,
+        //   date: "Nov 19th 2016",
+        //   title: "Healing Camp at AMBA",
+        //   description: "Centre for differently abled children"
+        // },
         {
           img: event7,
           date: "Jan 5th 2018",
@@ -75,6 +71,26 @@ export default class SocialIcons extends React.Component {
           date: "Nov 14th 2018",
           title: "Build India Movement counselling ",
           description: ""
+        },
+        {
+          img: event5,
+          date: "Jan 8th 2017",
+          title: "Aarogya Santhe",
+          description: "Importance of helathy daily routine – public awareness"
+        },
+        {
+          img: event6,
+          date: "Feb 11th 2017",
+          title: "Life is my Choice",
+          description: "Preventing academic stress and Will for Transformation"
+        }
+      ],
+      upcomingEvents: [
+        {
+          img: Kriya_Shakti_Img,
+          date: "12th - 14th April 2019",
+          title: "Kriya Shakti",
+          description: "Call us for more details @+919845426049"
         }
       ]
     };
@@ -111,6 +127,27 @@ export default class SocialIcons extends React.Component {
     return eventArray;
   };
 
+  drawUpcomingEvents = () => {
+    let eventArray = [];
+    this.state.upcomingEvents.forEach(data => {
+      eventArray.push(
+        <div className="event-card">
+          <div className="image">
+            <Image src={data.img} responsive />
+          </div>
+          <div className="details">{data.date}</div>
+          <div className="title">
+            <h4>{data.title}</h4>
+          </div>
+          <div className="description">
+            <p>{data.description}</p>
+          </div>
+        </div>
+      );
+    });
+    return eventArray;
+  };
+
   modalContent = () => (
     <Modal show={this.state.modalShow} onHide={this.handleClose}>
       <Modal.Body>
@@ -122,8 +159,7 @@ export default class SocialIcons extends React.Component {
             <div className="modal-div">{this.drawEvents()}</div>
           </Tab>
           <Tab eventKey="profile" title="Upcoming Events">
-            <h3>upcoming events</h3>
-            {/* <div className="modal-div">{this.drawEvents()}</div> */}
+            <div className="modal-div">{this.drawUpcomingEvents()}</div>
           </Tab>
         </Tabs>
       </Modal.Body>
